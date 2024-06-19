@@ -17,7 +17,7 @@ function check_for_plugin_update($transient) {
 }
 
 function get_remote_version() {
-    $response = wp_remote_get('https://yourserver.com/plugins/custom-login-page.json');
+    $response = wp_remote_get('https://wpgooal.com/plugins-updater/palgoals-core.json');
 
     if (is_wp_error($response) || 200 != wp_remote_retrieve_response_code($response)) {
         return false;
@@ -27,7 +27,7 @@ function get_remote_version() {
     return array(
         'slug' => plugin_basename(__FILE__),
         'new_version' => $remote_version['version'],
-        'url' => 'https://yourserver.com',
+        'url' => 'https://wpgooal.com',
         'package' => $remote_version['download_url']
     );
 }
@@ -39,7 +39,7 @@ function plugin_update_info($false, $action, $arg) {
         return $false;
     }
 
-    $response = wp_remote_get('https://yourserver.com/plugins/custom-login-page.json');
+    $response = wp_remote_get('https://wpgooal.com/plugins-updater/palgoals-core.json');
 
     if (is_wp_error($response) || 200 != wp_remote_retrieve_response_code($response)) {
         return $false;
