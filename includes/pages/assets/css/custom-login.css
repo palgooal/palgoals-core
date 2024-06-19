@@ -1,0 +1,109 @@
+body.login { 
+    font-family: 'Almarai', sans-serif !important; /* تغيير نوع الخط إلى Almarai */
+    background-image: url('../images/Desktop-5.svg') !important; 
+    background-size: cover; 
+    background-position: center !important;
+    background-repeat: no-repeat !important; /* منع تكرار الخلفية */
+    display: flex;
+    justify-content: flex-end; /* نقل المحتوى إلى الجهة اليمنى */
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* لإضافة مسافة حول المحتوى */
+    box-sizing: border-box;
+}
+
+#login {
+    width: 50% !important;
+    max-width: 400px;
+    min-width: 458px !important;
+    padding: 40px !important;
+    direction: rtl; /* تغيير الاتجاه إلى اليمين */
+    margin-right: 0px !important;
+}
+
+#loginform {
+    margin: 0;
+}
+
+.login label {
+    font-size: 14px;
+    text-align: right; /* محاذاة النص إلى اليمين */
+}
+
+.login form {
+    box-shadow: none !important; /* إلغاء الشدو */
+    border: none !important; /* إلغاء الحدود */
+    background: none !important; /* إلغاء الخلفية */
+}
+
+.login .input, .login input[type="text"], .login input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #240b36; /* تغيير لون الحدود */
+    border-radius: 8px; /* نصف قطر الحدود */
+    box-sizing: border-box;
+}
+
+.login .button-primary {
+    background-color: #240b36;
+    border-radius: 8px; /* نصف قطر الحدود */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px; /* إضافة مسافة بين الزر وخيار "تذكرني" */
+}
+
+.login .button-primary:hover {
+    background-color: #930f25;
+}
+
+.login .login-submit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.login #backtoblog, .login #nav, .login .privacy-policy-page-link, .language-switcher {
+    text-align: center;
+    display: none; /* إخفاء روابط تسجيل وهل فقدت كلمة مرورك وسياسة الخصوصية واللغة */
+}
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+    #login {
+        padding: 20px;
+    }
+    .login .input, .login input[type="text"], .login input[type="password"] {
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+    .login .button-primary {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    #login {
+        padding: 15px;
+    }
+    .login .input, .login input[type="text"], .login input[type="password"] {
+        padding: 6px;
+        margin-bottom: 6px;
+    }
+    .login .button-primary {
+        padding: 6px;
+    }
+}
+
+#login h1 a { 
+    background-image: url('../images/Ellipse-1.svg') !important; 
+    background-size: contain; 
+    width: 100%; 
+    height: 167px; 
+    margin-top: 70px;
+    margin-right: 50px;
+}
