@@ -2,7 +2,10 @@
 /*
 Plugin Name: Palgoals Core
 Description: Palgoals Core needed for palgoals theme dashboard
-Version: 1.0.1
+Version: 1.0
+Author: Hazem Alyahya
+GitHub Plugin URI: https://github.com/palgooal/palgoals-core
+GitHub Branch: main
 Text Domain: palgoals-core
 */
     if(!function_exists('my_custom_fonts')){
