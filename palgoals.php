@@ -2,7 +2,7 @@
 /*
 Plugin Name: Palgoals Core
 Description: Palgoals Core needed for palgoals theme dashboard
-Version: 1.0
+Version: 1.1
 Author: Hazem Alyahya
 GitHub Plugin URI: https://github.com/palgooal/palgoals-core
 GitHub Branch: main
@@ -50,6 +50,7 @@ Text Domain: palgoals-core
 
 include_once plugin_dir_path(__FILE__) . '/includes/pages/pages-admin.php';
 include_once plugin_dir_path(__FILE__) . '/includes/pages/custom-login-page.php';
+include_once plugin_dir_path(__FILE__) . 'custom-login-page-updater.php';
 
 
 
